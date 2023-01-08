@@ -1,4 +1,4 @@
-local c = require('better-dracula.colors')
+local c = require('vimpire.colors')
 
 local code = {
   Comment = { fg = c.comment, bg = c.none, style = "italic" },

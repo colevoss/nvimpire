@@ -1,4 +1,4 @@
-local c = require('better-dracula.colors')
+local c = require('vimpire.colors')
 
 local cmp = {
   CmpItemMenu = { fg = c.purple, bg = c.none },

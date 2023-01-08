@@ -1,4 +1,4 @@
-local c = require('better-dracula.colors')
+local c = require('vimpire.colors')
 
 local telescope = {
   TelescopeBorder = { fg = c.comment, bg = c.none, style = "bold" },

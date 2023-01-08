@@ -1,4 +1,4 @@
-local c = require('better-dracula.colors')
+local c = require('vimpire.colors')
 
 local nvim_tree = {
   NvimTreeNormal = { fg = c.fg, bg = c.bg_dark },

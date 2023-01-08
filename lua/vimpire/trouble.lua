@@ -1,4 +1,4 @@
-local c = require('better-dracula.colors')
+local c = require('vimpire.colors')
 
 local trouble = {
   TroubleNormal = { fg = c.fg, bg = c.none },

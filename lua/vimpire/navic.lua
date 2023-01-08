@@ -1,4 +1,4 @@
-local c = require('better-dracula.colors')
+local c = require('vimpire.colors')
 vim.api.nvim_set_hl(0, "NavicIconsFile", { default = true, bg = "", fg = "#BD93F9" })
 vim.api.nvim_set_hl(0, "NavicIconsModule", { default = true, bg = "", fg = "#BD93F9" })
 vim.api.nvim_set_hl(0, "NavicIconsNamespace", { default = true, bg = "", fg = "#BD93F9" })
