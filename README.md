@@ -6,7 +6,7 @@ Trying to update the Dracula theme for neovim and various neovim plugins
 
 To develop this run the following from this directory
 
-```
+```bash
 nvim --cmd "set rtp+=$(pwd)"
 ```
 
