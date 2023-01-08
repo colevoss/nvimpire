@@ -1,0 +1,24 @@
+local c = require('better-dracula.colors')
+
+local nvim_tree = {
+  NvimTreeNormal = { fg = c.fg, bg = c.bg_dark },
+  NvimTreeNormalNC = { bg = c.bg_dark },
+  NvimTreeCursorLine = { fg = c.none, bg = c.subtle },
+  NvimTreeEndOfBuffer = { fg = c.bg_dark, bg = c.bg_dark },
+  NvimTreeVertSplit = { fg = c.purple, bg = c.bg_dark },
+  NvimTreeWinSeparator = { fg = c.purple, bg = c.bg_dark },
+  NvimTreeOpenedFolderName = { fg = c.cyan, bg = c.none, style = "italic" },
+  NvimTreeOpenedFile = { fg = c.cyan, bg = c.none, style = "italic" },
+  NvimTreeGitIgnored = { fg = c.comment, bg = c.none },
+  NvimTreeGitStaged = { fg = c.green },
+  NvimTreeGitNew = { fg = c.cyan },
+  NvimTreeGitRenamed = { fg = c.orange },
+  NvimTreeGitDeleted = { fg = c.red },
+  NvimTreeGitMerge = { fg = c.orange },
+  NvimTreeGitDirty = { fg = c.pink },
+  NvimTreeSymlink = { fg = c.pink },
+  NvimTreeRootFolder = { fg = c.pink },
+  NvimTreeExecFile = { fg = c.green },
+}
+
+return nvim_tree
