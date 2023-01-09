@@ -16,8 +16,10 @@ class Test {
 
 const y = new Test();
 
+// Hello
 function test<T>(hello: string, balls: T) {
   hello.match();
+  const x = "asdf";
 }
 
 const testFn = async ([a]: string[]) => {};
@@ -27,8 +29,6 @@ y.test("hello");
 enum TestEnum {
   A,
 }
-
-Test;
 
 const e: TestEnum = TestEnum.A;
 
