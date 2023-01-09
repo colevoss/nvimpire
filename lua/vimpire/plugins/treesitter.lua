@@ -10,7 +10,7 @@ local treesitter = {
   ["@punctuation.bracket"] = { fg = c.fg, bg = c.none },
   ["@punctuation.special"] = { fg = c.pink, bg = c.none },
   ["@string"] = { fg = c.yellow, bg = c.none },
-  ["@string.regex"] = { fg = c.yellow, bg = c.none },
+  ["@string.regex"] = { fg = c.red, bg = c.none },
   ["@string.escape"] = { fg = c.cyan, bg = c.none },
   ["@boolean"] = { fg = c.purple, bg = c.none },
   ["@character"] = { fg = c.pink, bg = c.none },
@@ -24,11 +24,12 @@ local treesitter = {
   ["@method"] = { fg = c.green, bg = c.none },
   ["@method.call"] = { fg = c.green, bg = c.none },
   ["@constructor"] = { fg = c.cyan, bg = c.none },
-  ["@parameter"] = { fg = c.orange, bg = c.none },
+  ["@parameter"] = { fg = c.orange, bg = c.none, style = "italic" },
   ["@keyword"] = { fg = c.pink, bg = c.none },
   ["@keyword.function"] = { fg = c.pink, bg = c.none },
-  ["@keyword.operator"] = { fg = c.pink, bg = c.none },
+  ["@keyword.operator"] = { fg = c.pink, bg = c.none, style = "bold" },
   ["@keyword.return"] = { fg = c.pink, bg = c.none },
+  ["@keyword.export"] = { fg = c.pink, bg = c.none },
   ["@conditional"] = { fg = c.pink, bg = c.none },
   ["@repeat"] = { fg = c.pink, bg = c.none },
   ["@debug"] = { fg = c.cyan, bg = c.none },
@@ -37,7 +38,7 @@ local treesitter = {
   ["@exception"] = { fg = c.pink, bg = c.none },
   ["@type"] = { fg = c.cyan, bg = c.none, style = "italic" },
   ["@type.builtin"] = { fg = c.cyan, bg = c.none, style = "italic" },
-  ["@type.definition"] = { fg = c.pink, bg = c.none },
+  ["@type.definition"] = { fg = c.pink, bg = c.none, style = "italic" },
   ["@type.qualifier"] = { fg = c.cyan, bg = c.none, style = "italic" },
   ["@storageclass"] = { fg = c.pink, bg = c.none },
   ["@attribute"] = { fg = c.pink, bg = c.none },
@@ -69,6 +70,8 @@ local treesitter = {
   ["@tag"] = { fg = c.cyan, bg = c.none },
   ["@tag.attribute"] = { fg = c.fg, bg = c.none },
   ["@tag.delimeter"] = { fg = c.subtle, bg = c.none },
+
+  ["@definition.parameter"] = { fg = c.bg, bg = c.red },
 }
 
 return treesitter

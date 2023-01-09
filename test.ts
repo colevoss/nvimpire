@@ -2,7 +2,7 @@ const x = {
   hello: "asdf",
 };
 
-x.hello;
+const { hello } = x;
 
 class Test {
   public y: number;
@@ -16,9 +16,11 @@ class Test {
 
 const y = new Test();
 
-function test() {}
+function test<T>(hello: string, balls: T) {
+  hello.match();
+}
 
-const x = async () => {};
+const testFn = async ([a]: string[]) => {};
 
 y.test("hello");
 
@@ -29,3 +31,15 @@ enum TestEnum {
 Test;
 
 const e: TestEnum = TestEnum.A;
+
+interface TestInterface {
+  hello?: string;
+}
+
+interface OtherInterface extends TestInterface {}
+
+type TestType = {
+  hello: string;
+};
+
+export const exp = "asdf";

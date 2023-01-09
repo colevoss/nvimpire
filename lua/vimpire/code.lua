@@ -1,7 +1,7 @@
 local c = require('vimpire.colors')
 
 local code = {
-  Comment = { fg = c.comment, bg = c.none, style = "italic" },
+  Comment = { fg = c.comment, bg = c.none },
   Variable = { fg = c.fg, bg = c.none },
   Underlined = { fg = c.fg, bg = c.none, style = "underline" },
   Todo = { fg = c.cyan, bg = c.none, style = "bold" },
@@ -41,6 +41,12 @@ local code = {
   helpCommand = { fg = c.purple, bg = c.none },
   helpExample = { fg = c.green, bg = c.none },
   helpBacktick = { fg = c.orange, bg = c.none },
+
+
+  -- TODO
+  -- MARKDOWN
+  -- HTML
+  -- CSS
 
   -- NeoVim
   healthError = { fg = c.red },

@@ -17,7 +17,7 @@ local core = {
   DiffAdd = { fg = c.green, bg = c.bg },
   DiffChange = { fg = c.orange, bg = c.bg },
   DiffDelete = { fg = c.red, bg = c.bg },
-  DiffText = { fg = c.bg, bg = c.orange },
+  DiffText = { fg = c.comment, bg = c.none },
   EndOfBuffer = { fg = c.bg, bg = c.none },
   TermCursor = { fg = c.bg, bg = c.fg },
   TermCursorNC = { fg = c.bg, bg = c.fg },
