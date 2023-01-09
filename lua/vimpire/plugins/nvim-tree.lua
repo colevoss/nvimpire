@@ -5,8 +5,9 @@ local nvim_tree = {
   NvimTreeNormalNC = { bg = c.bg_dark },
   NvimTreeCursorLine = { fg = c.none, bg = c.subtle },
   NvimTreeEndOfBuffer = { fg = c.bg_dark, bg = c.bg_dark },
-  NvimTreeVertSplit = { fg = c.purple, bg = c.bg_dark },
-  NvimTreeWinSeparator = { fg = c.purple, bg = c.bg_dark },
+  -- NvimTreeVertSplit = { fg = c.purple, bg = c.bg_dark },
+  NvimTreeVertSplit = { fg = c.none, bg = c.none },
+  NvimTreeWinSeparator = { fg = c.bg_dark, bg = c.bg_dark },
   NvimTreeOpenedFolderName = { fg = c.cyan, bg = c.none, style = "italic" },
   NvimTreeOpenedFile = { fg = c.cyan, bg = c.none, style = "italic" },
   NvimTreeGitIgnored = { fg = c.comment, bg = c.none },
@@ -17,7 +18,7 @@ local nvim_tree = {
   NvimTreeGitMerge = { fg = c.orange },
   NvimTreeGitDirty = { fg = c.pink },
   NvimTreeSymlink = { fg = c.pink },
-  NvimTreeRootFolder = { fg = c.pink },
+  NvimTreeRootFolder = { fg = c.pink, style = "bold" },
   NvimTreeExecFile = { fg = c.green },
 }
 

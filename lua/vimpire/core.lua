@@ -3,7 +3,7 @@ local c = require('vimpire.colors')
 -- HELLO
 
 local core = {
-  ColorColumn = { bg = c.bg_dark },
+  ColorColumn = { fg = c.none, bg = c.bg_dark },
   Conceal = { fg = c.cyan, bg = c.none },
   Search = { fg = c.bg, bg = c.orange },
   CurSearch = { fg = c.bg, bg = c.orange },
@@ -26,12 +26,13 @@ local core = {
   VertSplit = { fg = c.none, bg = c.none },
   Folded = { fg = c.comment, bg = c.bg_dark },
   FoldColumn = { fg = c.subtle, bg = c.bg },
-  SignColumn = { fg = c.comment, bg = c.bg },
+  -- SignColumn = { fg = c.comment, bg = c.bg },
+  SignColumn = { fg = c.comment, bg = c.none },
   Substitue = { fg = c.bg, bg = c.red },
   LineNr = { fg = c.comment, bg = c.none },
   LineNrAbove = { fg = c.comment, bg = c.none },
   LineNrBelow = { fg = c.comment, bg = c.none },
-  CursorLineNr = { fg = c.fg, bg = c.bg },
+  CursorLineNr = { fg = c.fg, bg = c.none },
   MatchParen = { fg = c.green, bg = c.bg_lighter },
   ModeMsg = { fg = c.fg, bg = c.none, style = "bold" },
   MsgArea = { fg = c.fg, bg = c.none },
@@ -40,6 +41,7 @@ local core = {
   NonText = { fg = c.subtle, bg = c.none },
   Normal = { fg = c.fg, bg = c.none },
   NormalFloat = { fg = c.fg, bg = c.bg_dark },
+  FloatBorder = { fg = c.purple, bg = c.none },
   -- TODO: Maybe make this an option
   NormalNC = { fg = c.fg, bg = c.none },
   Pmenu = { fg = c.fg, bg = c.bg_dark },
@@ -64,11 +66,11 @@ local core = {
   WarningMsg = { fg = c.orange, bg = c.none, style = "bold" },
   WhiteSpace = { fg = c.subtle, bg = c.none },
   WildMenu = { fg = c.fg, bg = c.bg_dark },
-  Winbar = { fg = c.fg, bg = c.bg },
-  WinbarNC = { fg = c.fg, bg = c.bg_dark },
+  Winbar = { fg = c.fg, bg = c.none },
+  WinbarNC = { fg = c.fg, bg = c.none },
 
-  FidgetTask = { fg = c.comment, bg = c.bg_dark },
-  FidgetTitle = { fg = c.purple, bg = c.bg_dark },
+  -- FidgetTask = { fg = c.comment, bg = c.bg_dark },
+  -- FidgetTitle = { fg = c.purple, bg = c.bg_dark },
 }
 
 return core

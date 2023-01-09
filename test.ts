@@ -26,4 +26,6 @@ enum TestEnum {
   A,
 }
 
+Test;
+
 const e: TestEnum = TestEnum.A;

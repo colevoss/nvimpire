@@ -41,6 +41,11 @@ local code = {
   helpCommand = { fg = c.purple, bg = c.none },
   helpExample = { fg = c.green, bg = c.none },
   helpBacktick = { fg = c.orange, bg = c.none },
+
+  -- NeoVim
+  healthError = { fg = c.red },
+  healthSuccess = { fg = c.green },
+  healthWarning = { fg = c.orange },
 }
 
 return code
