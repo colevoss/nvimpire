@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     NvimTreeNormal = { fg = c.fg, bg = c.bg_dark },
     NvimTreeNormalNC = { bg = c.bg_dark },
     NvimTreeCursorLine = { fg = c.none, bg = c.subtle },

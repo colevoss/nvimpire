@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     DiagnosticOk = { fg = c.purple, bg = c.none },
     DiagnosticHint = { fg = c.cyan, bg = c.none },
     DiagnosticInfo = { fg = c.green, bg = c.none },

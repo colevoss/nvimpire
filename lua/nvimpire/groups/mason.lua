@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     MasonNormal = { fg = c.fg, bg = c.bg_dark },
     MasonHeader = { fg = c.fg, bg = c.bg_dark, style = "bold" },
     MasonSecondaryHeader = { fg = c.comment, bg = c.bg_dark, style = "bold" },

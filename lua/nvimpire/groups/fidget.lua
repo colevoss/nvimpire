@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     FidgetTask = {
       fg = c.fg,
       bg = c.none,

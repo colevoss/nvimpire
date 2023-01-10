@@ -20,22 +20,22 @@ function M.deep_copy(orig)
 end
 
 function M.extend(...)
-  local extended = {}
+  local lhs = {}
   -- For each table in args...
-  for _, t in ipairs(...) do
+  for _, rhs in ipairs({ ... }) do
     -- For each k,v pair of the table...
-    for k, v in pairs(t) do
+    for k, v in pairs(rhs) do
       -- If the extended table already has this key/value, and its a table
       -- extend it. Otherwise just set the value in the extended table
-      if type(extended[k]) == "table" and type(v) == "table" then
-        extended[k] = M.extend(extended[k], v)
+      if type(lhs[k]) == "table" and type(v) == "table" then
+        lhs[k] = M.extend(lhs[k], v)
       else
-        extended[k] = v
+        lhs[k] = v
       end
     end
   end
 
-  return extended
+  return lhs
 end
 
 return M

@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     TroubleNormal = { fg = c.fg, bg = c.none },
     TroubleText = { fg = c.fg, bg = c.none },
 

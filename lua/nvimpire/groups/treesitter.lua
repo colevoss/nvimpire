@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     ["@none"] = { fg = c.none, bg = c.none },
     ["@comment"] = { fg = c.comment, bg = c.none, style = "italic" },
     ["@preproc"] = { fg = c.pink, bg = c.none },

@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     NavicIconsFile = { fg = c.yellow, bg = c.none },
     NavicIconsModule = { fg = c.purple, bg = c.none },
     NavicIconsNamespace = { fg = c.pink, bg = c.none },

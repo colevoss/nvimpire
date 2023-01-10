@@ -1,4 +1,4 @@
-local c = require('nvimpire.colors')
+local c = require('nvimpire.colors').colors
 
 local nvimpire = {}
 

@@ -8,17 +8,17 @@ local defaults = {
   transparent = false,
 }
 
-M.config = lib.deep_copy(defaults)
+M.settings = lib.deep_copy(defaults)
 
 function M.config(opts)
   opts = opts or {}
 
-  M.config = lib.extend(M.config, opts)
+  M.settings = lib.extend(M.settings, opts)
   M.has_options = true
 end
 
 function M.reset()
-  M.config = lib.deep_copy(defaults)
+  M.settings = lib.deep_copy(defaults)
   M.has_options = false
 end
 
@@ -43,7 +43,7 @@ end
 function M.load_groups(groups)
   for _, group_name in next, groups, nil do
     local group = require('nvimpire.groups.' .. group_name)
-    M.initialize_group(group.get(M.config))
+    M.initialize_group(group.get(M.settings))
   end
 end
 

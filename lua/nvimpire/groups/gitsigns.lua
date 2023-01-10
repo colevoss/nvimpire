@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     SignAdd = { fg = c.green },
     SignChange = { fg = c.orange },
     SignDelete = { fg = c.red },

@@ -8,7 +8,7 @@ local groups = {
   'lsp',
   'treesitter',
   'telescope',
-  'nvim_tree',
+  'nvim-tree',
   'gitsigns',
   'cmp',
   'trouble',
@@ -18,7 +18,6 @@ local groups = {
   'notify',
   'illuminate',
 }
-
 
 function M.bootstrap()
   local clear = "hi clear"
@@ -41,22 +40,9 @@ end
 
 function M.setup(opts)
   M.bootstrap()
+  config.reset()
   config.config(opts)
   config.load_groups(groups)
 end
 
---
--- config.initialize_group(core)
--- config.initialize_group(code)
--- config.initialize_group(lsp)
--- config.initialize_group(treesitter)
--- config.initialize_group(telescope)
--- config.initialize_group(gitsigns)
--- config.initialize_group(cmp)
--- config.initialize_group(navic)
--- config.initialize_group(trouble)
--- config.initialize_group(mason)
--- config.initialize_group(notify)
--- config.initialize_group(fidget)
--- config.initialize_group(illuminate)
--- config.initialize_group(nvim_tree)
+return M

@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     NotifyERRORBorder = { fg = c.red, bg = c.none },
     NotifyWARNBorder  = { fg = c.orange, bg = c.none },
     NotifyINFOBorder  = { fg = c.green, bg = c.none },

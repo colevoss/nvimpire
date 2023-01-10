@@ -4,7 +4,6 @@ local M = {}
 
 function M.get()
   return {
-
     TelescopeBorder = { fg = c.purple, bg = c.none },
     TelescopeMatching = { fg = c.green, bg = c.none, style = "bold" },
     TelescopeNormal = { fg = c.fg, bg = c.none },
