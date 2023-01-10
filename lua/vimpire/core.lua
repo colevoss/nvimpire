@@ -39,7 +39,7 @@ local core = {
   MsgSeparator = { fg = c.fg, bg = c.bg },
   MoreMsg = { fg = c.fg, bg = c.bg, style = "bold" },
   NonText = { fg = c.subtle, bg = c.none },
-  Normal = { fg = c.fg, bg = c.none },
+  Normal = { fg = c.fg, bg = c.bg },
   NormalFloat = { fg = c.fg, bg = c.none },
   FloatBorder = { fg = c.purple, bg = c.none },
   -- TODO: Maybe make this an option

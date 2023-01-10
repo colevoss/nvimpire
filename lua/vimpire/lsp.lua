@@ -8,7 +8,7 @@ local lsp = {
   DiagnosticError = { fg = c.red, bg = c.none },
 
   DiagnosticUnderlineOk = { fg = c.purple, bg = c.none, style = "underline" },
-  DiagnosticUnderlineHint = { fg = c.subtle, bg = c.none, style = "underline" },
+  DiagnosticUnderlineHint = { fg = c.cyan, bg = c.none, style = "underline" },
   DiagnosticUnderlineInfo = { fg = c.cyan, bg = c.none, style = "underline" },
   DiagnosticUnderlineWarn = { fg = c.orange, bg = c.none, style = "underline" },
   DiagnosticUnderlineError = { fg = c.red, bg = c.none, style = "underline" },
