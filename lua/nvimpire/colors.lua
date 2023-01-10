@@ -1,6 +1,6 @@
--- asdfasdfasdf
+local M = {}
 
-local colors = {
+M.colors = {
   -- background
   bg = '#282A36',
   bg_light = '#343746',
@@ -47,4 +47,8 @@ local colors = {
   none = 'NONE',
 }
 
-return colors
+function M.background(transparent)
+  return transparent and M.colors.none or M.colors.bg
+end
+
+return M

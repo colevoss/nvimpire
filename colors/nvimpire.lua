@@ -1,1 +1,1 @@
-require('vimpire')
+require('nvimpire')._load()

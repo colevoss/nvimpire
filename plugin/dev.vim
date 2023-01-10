@@ -12,5 +12,5 @@ endfunction
 nnoremap <Leader>pra :call ReloadAlpha()<CR>
 
 " Test the plugin
-nnoremap <Leader>cs :colorscheme vimpire<CR>
+nnoremap <Leader>cs :colorscheme nvimpire<CR>
 
