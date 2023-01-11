@@ -42,7 +42,7 @@ function M.get()
     ["@type"] = { fg = c.cyan, bg = c.none, style = "italic" },
     ["@type.builtin"] = { fg = c.cyan, bg = c.none, style = "italic" },
     ["@type.definition"] = { fg = c.pink, bg = c.none, style = "italic" },
-    ["@type.qualifier"] = { fg = c.cyan, bg = c.none, style = "italic" },
+    ["@type.qualifier"] = { fg = c.pink, bg = c.none, style = "italic" },
     ["@storageclass"] = { fg = c.pink, bg = c.none },
     ["@attribute"] = { fg = c.pink, bg = c.none },
     ["@field"] = { fg = c.fg, bg = c.none },

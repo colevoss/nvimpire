@@ -1,6 +1,9 @@
 local config = require('nvimpire.config')
+local colors = require('nvimpire.colors').colors
 
 local M = {}
+
+M.colors = colors
 
 local groups = {
   'core',
