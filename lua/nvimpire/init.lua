@@ -12,6 +12,7 @@ local groups = {
   'treesitter',
   'telescope',
   'nvim-tree',
+  'neotree',
   'gitsigns',
   'cmp',
   'trouble',

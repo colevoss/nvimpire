@@ -13,6 +13,7 @@ function M.get()
     NvimTreeWinSeparator = { fg = c.bg_dark, bg = c.bg_dark },
     NvimTreeOpenedFolderName = { fg = c.cyan, bg = c.none, style = "italic" },
     NvimTreeOpenedFile = { fg = c.cyan, bg = c.none, style = "italic" },
+
     NvimTreeGitIgnored = { fg = c.comment, bg = c.none },
     NvimTreeGitStaged = { fg = c.green },
     NvimTreeGitNew = { fg = c.cyan },
