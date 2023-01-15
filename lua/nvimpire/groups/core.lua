@@ -59,9 +59,11 @@ function M.get(config)
     SpellRare = { fg = c.cyan, style = "underline" },
     StatusLine = { fg = c.none, bg = c.bg_dark, style = "bold" },
     StatusLineNC = { fg = c.none, bg = c.bg_dark, style = "bold" },
-    TabLine = { fg = c.none, bg = c.bg_dark },
-    TabLineFill = { fg = c.none, bg = c.bg_dark },
-    TabLineSel = { fg = c.none, bg = c.bg },
+
+    TabLine = { fg = c.none, bg = c.none },
+    TabLineFill = { fg = c.bg_dark, bg = c.bg },
+    TabLineSel = { fg = c.none, bg = c.none },
+
     Title = { fg = c.green, bg = c.none, style = "bold" },
     Visual = { fg = c.none, bg = c.selection },
     VisualNOS = { fg = c.none, bg = c.selection },
