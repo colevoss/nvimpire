@@ -1,0 +1,11 @@
+*nvimpire.txt*                                  Dracula clone theme for NeoVim
+
+==============================================================================
+Table of Contents                                 *nvimpire-table-of-contents*
+
+1. Features                                               |nvimpire-features|
+
+==============================================================================
+1. Features                                               *nvimpire-features*
+
+TODO: Write docs
