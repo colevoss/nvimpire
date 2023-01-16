@@ -3,6 +3,11 @@
 [Dracula](https://draculatheme.com/) colors cheme built for Neovim 0.8+ using Lua that supports and
 customizes several popular Neovim plugins.
 
+![Transparent Nvimpire](https://user-images.githubusercontent.com/2539760/212601732-0b5d030c-6589-4eb5-92d3-9c6a41f3b854.png)
+![Opaque Nvimpire](https://user-images.githubusercontent.com/2539760/212601864-552178ec-d328-45bc-ab00-a052a2021546.png)
+
+
+
 ## Install
 
 ### Packer
