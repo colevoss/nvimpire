@@ -1,11 +1,12 @@
 local c = require('nvimpire.colors').colors
+local bg = require('nvimpire.colors').background
 
 local M = {}
 
-function M.get()
+function M.get(config)
   return {
     NeoTreeCursorLine = { fg = c.none, bg = c.selection },
-    NeoTreeDotFile = { fg = c.comment, bg = c.selection },
+    NeoTreeDotFile = { fg = c.comment, bg = c.none },
     NeoTreeDimText = { fg = c.subtle, bg = c.none },
 
     NeoTreeDirectoryIcon = { fg = c.cyan, bg = c.none },
@@ -20,10 +21,10 @@ function M.get()
     NeoTreeExpander = { fg = c.fg, bg = c.none },
     NeoTreeModified = { fg = c.cyan, bg = c.none },
     NeoTreeFileName = { fg = c.fg, bg = c.none },
-    NeoTreeFileNameOpened = { fg = c.fg, bg = c.none, style = "bold" },
+    NeoTreeFileNameOpened = { fg = c.fg, bg = c.none, bold = true },
 
     NeoTreeGitAdded = { fg = c.green, bg = c.none },
-    NeoTreeGitConflict = { fg = c.red, bg = c.none, style = "italic" },
+    NeoTreeGitConflict = { fg = c.red, bg = c.none, italic = true },
     NeoTreeGitDeleted = { fg = c.red, bg = c.none },
     NeoTreeGitIgnored = { fg = c.comment, bg = c.none },
     NeoTreeGitModified = { fg = c.cyan, bg = c.none },
@@ -32,14 +33,26 @@ function M.get()
     NeoTreeGitRenamed = { fg = c.orange, bg = c.none },
     NeoTreeGitStaged = { fg = c.green, bg = c.none },
     NeoTreeMessage = { fg = c.orange, bg = c.none },
-    NeoTreeNormal = { fg = c.fg, bg = c.none },
-    NeoTreeNormalNC = { fg = c.fg, bg = c.none },
 
-    NeoTreeTabActive = { fg = c.purple, bg = c.none },
-    NeoTreeTabInactive = { fg = c.comment, bg = c.none },
+    -- Background
+    NeoTreeNormal = { fg = c.fg, bg = bg(config.transparent, c.none, c.bg_dark) },
+    NeoTreeNormalNC = { fg = c.fg, bg = bg(config.transparent, c.none, c.bg_dark) },
 
-    NeoTreeTabSeparatorActive = { fg = c.purple, bg = c.none },
-    NeoTreeTabSeparatorInactive = { fg = c.subtle, bg = c.none },
+    -- Tabs
+    NeoTreeTabActive = { fg = c.purple, bg = bg(config.transparent, c.none, c.bg_dark) },
+    NeoTreeTabInactive = { fg = c.comment, bg = bg(config.transparent, c.none, c.bg_darker) },
+
+    NeoTreeTabSeparatorActive = {
+      fg = bg(config.transparent, c.purple, c.bg_dark),
+      bg = bg(config.transparent, c.none, c.bg_dark)
+    },
+
+    NeoTreeTabSeparatorInactive = {
+      -- fg = c.subtle, bg = c.none
+      fg = bg(config.transparent, c.purple, c.bg_dark),
+      bg = bg(config.transparent, c.none, c.bg_darker)
+    },
+
     NeoTreeVertSplit = { fg = c.subtle, bg = c.none },
     NeoTreeWinSeparator = { fg = c.subtle, bg = c.none },
 

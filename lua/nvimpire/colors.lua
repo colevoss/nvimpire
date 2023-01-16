@@ -47,8 +47,8 @@ M.colors = {
   none = 'NONE',
 }
 
-function M.background(transparent)
-  return transparent and M.colors.none or M.colors.bg
+function M.background(transparent, ifTransparentColor, ifNotColor)
+  return transparent and ifTransparentColor or ifNotColor
 end
 
 return M

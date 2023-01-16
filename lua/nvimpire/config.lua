@@ -22,21 +22,13 @@ function M.reset()
   M.has_options = false
 end
 
-local function highlight(group, properties)
-  local bg = properties.bg == nil and "" or "guibg=" .. properties.bg
-  local fg = properties.fg == nil and "" or "guifg=" .. properties.fg
-  local style = properties.style == nil and "" or "gui=" .. properties.style
-
-  local cmd = table.concat({
-    "highlight", group, bg, fg, style
-  }, " ")
-
-  vim.api.nvim_command(cmd)
+local function hl(group, properties)
+  vim.api.nvim_set_hl(0, group, properties)
 end
 
 function M.initialize_group(group)
   for group_name, properties in pairs(group) do
-    highlight(group_name, properties)
+    hl(group_name, properties)
   end
 end
 

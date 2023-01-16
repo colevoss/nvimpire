@@ -10,11 +10,11 @@ function M.get()
     DiagnosticWarn = { fg = c.orange, bg = c.none },
     DiagnosticError = { fg = c.red, bg = c.none },
 
-    DiagnosticUnderlineOk = { fg = c.purple, bg = c.none, style = "underline" },
-    DiagnosticUnderlineHint = { fg = c.cyan, bg = c.none, style = "underline" },
-    DiagnosticUnderlineInfo = { fg = c.cyan, bg = c.none, style = "underline" },
-    DiagnosticUnderlineWarn = { fg = c.orange, bg = c.none, style = "underline" },
-    DiagnosticUnderlineError = { fg = c.red, bg = c.none, style = "underline" },
+    DiagnosticUnderlineOk = { fg = c.purple, bg = c.none, underline = true },
+    DiagnosticUnderlineHint = { fg = c.cyan, bg = c.none, underline = true },
+    DiagnosticUnderlineInfo = { fg = c.cyan, bg = c.none, underline = true },
+    DiagnosticUnderlineWarn = { fg = c.orange, bg = c.none, underline = true },
+    DiagnosticUnderlineError = { fg = c.red, bg = c.none, underline = true },
 
     LspDiagnosticHint = { fg = c.cyan, bg = c.none },
     LspDiagnosticInfo = { fg = c.green, bg = c.none },
@@ -52,17 +52,17 @@ function M.get()
     NvimTreeLspDiagnosticWarn = { fg = c.orange, bg = c.none },
     NvimTreeLspDiagnosticError = { fg = c.red, bg = c.none },
 
-    LspDiagnosticUnderlineHint = { fg = c.subtle, bg = c.none, style = "underline" },
-    LspDiagnosticUnderlineInfo = { fg = c.cyan, bg = c.none, style = "underline" },
-    LspDiagnosticUnderlineInformation = { fg = c.cyan, bg = c.none, style = "underline" },
-    LspDiagnosticUnderlineWarn = { fg = c.orange, bg = c.none, style = "underline" },
-    LspDiagnosticUnderlineError = { fg = c.red, bg = c.none, style = "underline" },
+    LspDiagnosticUnderlineHint = { fg = c.subtle, bg = c.none, underline = true },
+    LspDiagnosticUnderlineInfo = { fg = c.cyan, bg = c.none, underline = true },
+    LspDiagnosticUnderlineInformation = { fg = c.cyan, bg = c.none, underline = true },
+    LspDiagnosticUnderlineWarn = { fg = c.orange, bg = c.none, underline = true },
+    LspDiagnosticUnderlineError = { fg = c.red, bg = c.none, underline = true },
 
     LspReferenceRead = { fg = c.none, bg = c.bg_light },
     LspReferenceText = { fg = c.none, bg = c.bg_light },
     LspReferenceWrite = { fg = c.none, bg = c.bg_light },
-    LspCodeLens = { fg = c.comment, bg = c.none, style = "italic" },
-    LspCodeLensSeparator = { fg = c.comment, bg = c.none, style = "italic" },
+    LspCodeLens = { fg = c.comment, bg = c.none, italic = true },
+    LspCodeLensSeparator = { fg = c.comment, bg = c.none, italic = true },
   }
 end
 

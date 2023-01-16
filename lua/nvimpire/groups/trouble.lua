@@ -1,10 +1,11 @@
 local c = require('nvimpire.colors').colors
+local bg = require('nvimpire.colors').background
 
 local M = {}
 
-function M.get()
+function M.get(config)
   return {
-    TroubleNormal = { fg = c.fg, bg = c.none },
+    TroubleNormal = { fg = c.fg, bg = bg(config.transparent, c.none, c.bg_dark) },
     TroubleText = { fg = c.fg, bg = c.none },
 
     TroubleCount = { fg = c.fg, bg = c.none },
