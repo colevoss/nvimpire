@@ -64,7 +64,7 @@ function M.get(config)
     SpellLocal = { fg = c.orange, underline = true },
     SpellRare = { fg = c.cyan, underline = true },
 
-    StatusLine = { fg = c.none, bg = bg(config.transparent, c.none, c.bg_dark), bold = true },
+    StatusLine = { fg = c.bg, bg = bg(config.transparent, c.none, c.bg_dark), bold = true },
     StatusLineNC = { fg = c.none, bg = bg(config.transparent, c.none, c.bg_dark), bold = true },
 
     TabLine = { fg = c.bg, bg = bg(config.transparent, c.bg_dark, c.bg_dark) },

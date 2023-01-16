@@ -1,4 +1,4 @@
-# NVimpire
+# nvimpire
 
 [Dracula](https://draculatheme.com/) colors cheme built for Neovim 0.8+ using Lua that supports and
 customizes several popular Neovim plugins.
@@ -57,3 +57,13 @@ Nvimpire customizes the following plugins
 * [fidget](https://github.com/j-hui/fidget.nvim)
 * [notify](https://github.com/rcarriga/nvim-notify)
 * [illuminate](https://github.com/RRethy/vim-illuminate)
+
+## Inspiration
+
+[Dracula](https://draculatheme.com/vim) is my favorite colorscheme for pretty much all things. While I used their amazing Vim colorscheme I
+wanted more customization and support for various plugins as well as a better transparent mode. I also thought
+a Lua version would be great so I created my own version of it and built support for all my favorite Neovim
+plugins.
+
+This is my first Neovim plugin or colorscheme and I drew a lot of architecture inspiration from other popular Neovim colorschemes like
+[Catppuccin](https://github.com/catppuccin/nvim) and [tokyonight](https://github.com/folke/tokyonight.nvim).

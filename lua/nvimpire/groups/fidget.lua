@@ -5,7 +5,7 @@ local M = {}
 function M.get()
   return {
     FidgetTask = {
-      fg = c.fg,
+      fg = c.comment,
       bg = c.none,
     },
     FidgetTitle = {
