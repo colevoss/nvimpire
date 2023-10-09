@@ -21,6 +21,7 @@ local groups = {
   'fidget',
   'notify',
   'illuminate',
+  'indent-blankline',
 }
 
 function M.bootstrap()

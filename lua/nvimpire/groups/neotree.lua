@@ -10,7 +10,7 @@ function M.get(config)
     NeoTreeDimText = { fg = c.subtle, bg = c.none },
 
     NeoTreeDirectoryIcon = { fg = c.cyan, bg = c.none },
-    NeoTreeDirectoryName = { fg = c.fg, bg = c.none },
+    NeoTreeDirectoryName = { fg = c.cyan, bg = c.none },
 
     NeoTreeSymbolicLinkTarget = { fg = c.pink, bg = c.none },
 
@@ -21,7 +21,7 @@ function M.get(config)
     NeoTreeExpander = { fg = c.fg, bg = c.none },
     NeoTreeModified = { fg = c.cyan, bg = c.none },
     NeoTreeFileName = { fg = c.fg, bg = c.none },
-    NeoTreeFileNameOpened = { fg = c.fg, bg = c.none, bold = true },
+    NeoTreeFileNameOpened = { fg = c.fg, bg = c.none, bold = true, italic = true },
 
     NeoTreeGitAdded = { fg = c.green, bg = c.none },
     NeoTreeGitConflict = { fg = c.red, bg = c.none, italic = true },

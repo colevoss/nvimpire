@@ -55,6 +55,13 @@ function M.get()
     healthError = { fg = c.red },
     healthSuccess = { fg = c.green },
     healthWarning = { fg = c.orange },
+
+    markdownHeadingDelimiter = { fg = c.orange, bold = true },
+    markdownCode = { fg = c.cyan },
+    markdownCodeBlock = { fg = c.cyan },
+    markdownH1 = { fg = c.pruple, bold = true },
+    markdownH2 = { fg = c.green, bold = true },
+    markdownLinkText = { fg = c.yellow, underline = true },
   }
 end
 
